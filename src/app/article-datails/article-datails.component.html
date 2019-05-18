@@ -1,0 +1,9 @@
+<div>
+  <h3>{{article.title}}</h3>
+
+  <div [innerHtml]='currentDescription'></div>
+  <span *ngIf='!isDescriptionEnded'>
+    <button type="button" class="btn btn-link" (click)='readMore()'>read more...</button>
+  </span>
+
+</div>
