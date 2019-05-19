@@ -4,8 +4,8 @@ import { ArticleDatailsComponent } from './article-datails/article-datails.compo
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: 'angular-history/article/:id', component: ArticleDatailsComponent },
-  { path: '**', redirectTo: 'angular-history/article/1', pathMatch: 'full' }
+  { path: 'article/:id', component: ArticleDatailsComponent },
+  { path: '**', redirectTo: '/article/1', pathMatch: 'full' }
 ];
 
 @NgModule({
